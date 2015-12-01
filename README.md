@@ -2,7 +2,7 @@
 
 A simple redirector to redirect to the 'real' video (mp4) URL of a youtube video using the [youtube-dl](https://github.com/rg3/youtube-dl) python module.
 
-This was meant to be used in with [Zapier](https://zapier.com) to automatically download YouTube videos into my DropBox account for those times I'm without an internet connection.
+This was meant to be used alongside [Zapier](https://zapier.com) to automatically download YouTube videos into my DropBox account (which is synced to my Android tablet) for those times I'm without an internet connection.
 
 
 ## Installation
