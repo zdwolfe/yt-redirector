@@ -1,39 +1,12 @@
-# python-getting-started
+# youtube-dl-web
 
-A barebones Python app, which can easily be deployed to Heroku.
+A simple redirector to redirect to the 'real' video (mp4) URL of a youtube video using the [youtube-dl](https://github.com/rg3/youtube-dl) python module.
 
-This application support the [Getting Started with Python on Heroku](https://devcenter.heroku.com/articles/getting-started-with-python) article - check it out.
+This was meant to be used in with [Zapier](https://zapier.com) to automatically download YouTube videos into my DropBox account for those times I'm without an internet connection.
 
-## Running Locally
 
-Make sure you have Python [installed properly](http://install.python-guide.org).  Also, install the [Heroku Toolbelt](https://toolbelt.heroku.com/) and [Postgres](https://devcenter.heroku.com/articles/heroku-postgresql#local-setup).
+## Installation
+This is mostly just a hacked up [Heroku starter python app](https://devcenter.heroku.com/articles/getting-started-with-python), so follow the steps to install/deploy.
 
-```sh
-$ git clone git@github.com:heroku/python-getting-started.git
-$ cd python-getting-started
-$ pip install -r requirements.txt
-$ createdb python_getting_started
-$ heroku local:run python manage.py migrate
-$ python manage.py collectstatic
-$ heroku local
-```
-
-Your app should now be running on [localhost:5000](http://localhost:5000/).
-
-## Deploying to Heroku
-
-```sh
-$ heroku create
-$ git push heroku master
-$ heroku run python manage.py migrate
-$ heroku open
-```
-or
-
-[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
-
-## Documentation
-
-For more information about using Python on Heroku, see these Dev Center articles:
-
-- [Python on Heroku](https://devcenter.heroku.com/categories/python)
+## Usage
+Hit the app's URL, supplying a ```v``` query parameter that matches the one you want to download. For example, http://localhost:5000?v=spOq3wIO9mk will HTTP 302 redirect you to the source video file of [Michael Jackson](https://www.youtube.com/watch?v=spOq3wIO9mk).
