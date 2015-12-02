@@ -3,7 +3,7 @@
 A simple redirector to redirect to the 'real' video (mp4) URL of a youtube video using the [youtube-dl](https://github.com/rg3/youtube-dl) python module.
 
 ## Why?
-  [Zapier](https://zapier.com) can be used to respond to events (called triggers) that happen on one web app with actions on another web app. One of Zapier's [triggers](https://zapier.com/zapbook/youtube/) is upon a new YouTube video given some user. One available action for DropBox is to download a file with a given URL. So, ``youtube-dl-web`` connects the two, downloading YouTube videos of my favorite content creators into my DropBox account (which is auto-synced to my Android tablet) for those times I'm without an internet connection.
+  [Zapier](https://zapier.com) can be used to respond to events (called triggers) that happen on one web app with actions on another web app. One of Zapier's [triggers](https://zapier.com/zapbook/youtube/) is upon a new YouTube video given some user. One available action for Google Drive is to download a file with a given URL. So, ``youtube-dl-web`` connects the two, downloading YouTube videos of my favorite content creators into my Google Drive account (which is auto-synced to my Android tablet) for those times I'm without an internet connection.
 
 
 ## Usage
