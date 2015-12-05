@@ -18,3 +18,9 @@ TL;DR:
 2. ``heroku create``
 3. ``git push heroku master``
 4. ``heroku ps:scale web=1``
+
+## Config
+1. (optionally) Set up monitoring using https://deadmanssnitch.com
+  *  Set your snitch URL as the environment variable ``SNITCH_URL``
+  *  Set your desired snitch interval as the environment variable ``SNITCH_INTERVAL`` (seconds)
+
