@@ -9,6 +9,7 @@ import youtube_dl
 # /?v=spOq3wIO9mk will resolve to a michael jackson video mp4 :)
 def index(request):
     ydl_opts = {
+        'format': 'best',
         'quiet': True,
         'forceurl': True,
         'skip_download': True
